@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="UselessParent"
+    android:padding="24dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/themesRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/themeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_label"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:layout_marginStart="8dp"
+            android:id="@+id/lightModeRB"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_mode_label"
+            tools:ignore="ButtonSize"/>
+
+        <RadioButton
+            android:layout_marginStart="8dp"
+            android:id="@+id/darkModeRB"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_mode_label"
+            tools:ignore="ButtonSize"/>
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/notificationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notification_label"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginStart="8dp"
+            android:id="@+id/allowTV"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allow_label"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/profileTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_label"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_label"
+            android:textColorHint="@color/dark_gray"
+            android:autofillHints="emailAddress"/>
+
+        <EditText
+            android:id="@+id/nicknameET"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:textColorHint="@color/dark_gray"
+            android:hint="@string/nickname_label"
+            android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/saveB"
+        android:layout_width="320dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/save_label"
+        app:cornerRadius="0dp"
+        tools:ignore="ButtonSize" />
+
+</LinearLayout>
